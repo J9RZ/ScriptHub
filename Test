@@ -1,154 +1,83 @@
 
 
 local ScreenGui = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
+local MainFrame = Instance.new("Frame")
+local Swag = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
-local DaHood = Instance.new("TextButton")
-local PetSimX = Instance.new("TextButton")
-local Names = Instance.new("TextLabel")
-local Other = Instance.new("TextButton")
-local TextLabel_3 = Instance.new("TextLabel")
-local DH = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
+local RayX = Instance.new("TextButton")
 local DaHub = Instance.new("TextButton")
-local TextLabel_4 = Instance.new("TextLabel")
-local PSX = Instance.new("Frame")
-local TextButton_3 = Instance.new("TextButton")
-local OtherTab = Instance.new("Frame")
 
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
 
-Main.Name = "Main"
-Main.Parent = ScreenGui
-Main.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-Main.BorderColor3 = Color3.fromRGB(21, 21, 21)
-Main.Position = UDim2.new(0.320954919, 0, 0.312127233, 0)
-Main.Size = UDim2.new(0, 359, 0, 273)
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+MainFrame.BorderColor3 = Color3.fromRGB(31, 31, 31)
+MainFrame.Position = UDim2.new(0.358090192, 0, 0.210735574, 0)
+MainFrame.Size = UDim2.new(0, 350, 0, 273)
 
-TextLabel.Parent = Main
-TextLabel.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-TextLabel.BorderColor3 = Color3.fromRGB(21, 21, 21)
-TextLabel.Position = UDim2.new(0.0860927179, 0, 0.0240000002, 0)
-TextLabel.Size = UDim2.new(0, 195, 0, 42)
-TextLabel.Font = Enum.Font.GothamBold
-TextLabel.Text = "Josh's Script Hub"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 20.000
-TextLabel.TextWrapped = true
-
-
-TextLabel_2.Parent = Main
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-TextLabel_2.BorderColor3 = Color3.fromRGB(31, 31, 31)
-TextLabel_2.Position = UDim2.new(-0.215231791, 0, 0, 0)
-TextLabel_2.Size = UDim2.new(0, 108, 0, 273)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = ""
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextSize = 14.000
-
-DaHood.Name = "DaHood"
-DaHood.Parent = Main
-DaHood.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-DaHood.BorderColor3 = Color3.fromRGB(21, 21, 21)
-DaHood.Position = UDim2.new(-0.182488158, 0, 0.360380977, 0)
-DaHood.Size = UDim2.new(0, 83, 0, 45)
-DaHood.Font = Enum.Font.GothamBold
-DaHood.Text = "Da Hood"
-DaHood.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaHood.TextSize = 18.000
-
-PetSimX.Name = "PetSimX"
-PetSimX.Parent = Main
-PetSimX.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-PetSimX.BorderColor3 = Color3.fromRGB(21, 21, 21)
-PetSimX.Position = UDim2.new(-0.183115348, 0, 0.574065924, 0)
-PetSimX.Size = UDim2.new(0, 83, 0, 50)
-PetSimX.Font = Enum.Font.GothamBold
-PetSimX.Text = "Pet Sim X"
-PetSimX.TextColor3 = Color3.fromRGB(255, 255, 255)
-PetSimX.TextSize = 18.000
-
-Names.Name = "Names"
-Names.Parent = Main
-Names.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-Names.BorderColor3 = Color3.fromRGB(31, 31, 31)
-Names.Position = UDim2.new(-0.165931851, 0, 0.000468879938, 0)
-Names.Size = UDim2.new(0, 59, 0, 50)
-Names.Font = Enum.Font.GothamBold
-Names.Text = "Tabs"
-Names.TextColor3 = Color3.fromRGB(255, 255, 255)
-Names.TextSize = 20.000
-
-Other.Name = "Other"
-Other.Parent = Main
-Other.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-Other.BorderColor3 = Color3.fromRGB(21, 21, 21)
-Other.Position = UDim2.new(-0.183844015, 0, 0.783882797, 0)
-Other.Size = UDim2.new(0, 83, 0, 50)
-Other.Font = Enum.Font.GothamBold
-Other.Text = "Other"
-Other.TextColor3 = Color3.fromRGB(255, 255, 255)
-Other.TextSize = 18.000
-
-TextLabel_3.Parent = Other
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(1.73493981, 0, -3.38000011, 0)
-TextLabel_3.Size = UDim2.new(0, 258, 0, 183)
-TextLabel_3.Font = Enum.Font.GothamBold
-TextLabel_3.Text = "Coming Soon"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 44.000
-
-DH.Name = "DH"
-DH.Parent = Main
-DH.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-DH.BorderColor3 = Color3.fromRGB(20, 20, 20)
-DH.Position = UDim2.new(0.119777165, 0, 0.230769232, 0)
-DH.Size = UDim2.new(0, 298, 0, 201)
-
-TextButton.Parent = DH
-TextButton.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-TextButton.BorderColor3 = Color3.fromRGB(15, 15, 15)
-TextButton.Position = UDim2.new(0.281879187, 0, -0.0640394092, 0)
-TextButton.Size = UDim2.new(0, 160, 0, 65)
-TextButton.Font = Enum.Font.GothamBold
-TextButton.Text = "SwagMode "
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextSize = 14.000
-TextButton.MouseButton1Down:connect(function()
+Swag.Name = "Swag"
+Swag.Parent = MainFrame
+Swag.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Swag.BorderColor3 = Color3.fromRGB(21, 21, 21)
+Swag.Position = UDim2.new(0.519999981, 0, 0.300366342, 0)
+Swag.Size = UDim2.new(0, 152, 0, 50)
+Swag.Font = Enum.Font.GothamBold
+Swag.Text = "SwagMode"
+Swag.TextColor3 = Color3.fromRGB(255, 255, 255)
+Swag.TextSize = 14.000
+Swag.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
 end)
 
-TextButton_2.Parent = DH
-TextButton_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-TextButton_2.BorderColor3 = Color3.fromRGB(15, 15, 15)
-TextButton_2.Position = UDim2.new(0.281879187, 0, 0.339901477, 0)
-TextButton_2.Size = UDim2.new(0, 160, 0, 65)
-TextButton_2.Font = Enum.Font.GothamBold
-TextButton_2.Text = "RayCodeX"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextSize = 14.000
-TextButton_2.MouseButton1Down:connect(function()
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+TextLabel.BorderColor3 = Color3.fromRGB(21, 21, 21)
+TextLabel.Position = UDim2.new(-0.168571427, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 108, 0, 273)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = MainFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.0857142881, 0, 0.0549450554, 0)
+TextLabel_2.Size = UDim2.new(0, 90, 0, 43)
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "Josh's Exploit Gui"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 13.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+RayX.Name = "RayX"
+RayX.Parent = MainFrame
+RayX.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+RayX.BorderColor3 = Color3.fromRGB(21, 21, 21)
+RayX.Position = UDim2.new(0.519999981, 0, 0.520146549, 0)
+RayX.Size = UDim2.new(0, 152, 0, 50)
+RayX.Font = Enum.Font.GothamBold
+RayX.Text = "RayCodeX"
+RayX.TextColor3 = Color3.fromRGB(255, 255, 255)
+RayX.TextSize = 14.000
+RayX.MouseButton1Down:connect(function()
 	loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
 end)
 
 DaHub.Name = "Da Hub"
-DaHub.Parent = DH
-DaHub.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-DaHub.BorderColor3 = Color3.fromRGB(15, 15, 15)
-DaHub.Position = UDim2.new(0.281879187, 0, 0.714285731, 0)
-DaHub.Size = UDim2.new(0, 160, 0, 58)
+DaHub.Parent = MainFrame
+DaHub.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+DaHub.BorderColor3 = Color3.fromRGB(21, 21, 21)
+DaHub.Position = UDim2.new(0.519999981, 0, 0.76556778, 0)
+DaHub.Size = UDim2.new(0, 152, 0, 50)
 DaHub.Font = Enum.Font.GothamBold
 DaHub.Text = "Da Hub"
 DaHub.TextColor3 = Color3.fromRGB(255, 255, 255)
-DaHub.TextSize = 22.000
+DaHub.TextSize = 14.000
 DaHub.MouseButton1Down:connect(function()
 	--DA HUB V3
 	getgenv().Toggle = "v"--Must be lowercase
@@ -156,78 +85,30 @@ DaHub.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
 end)
 
-TextLabel_4.Parent = Main
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-TextLabel_4.BorderColor3 = Color3.fromRGB(31, 31, 31)
-TextLabel_4.Position = UDim2.new(-0.197771579, 0, 0.146520153, 0)
-TextLabel_4.Size = UDim2.new(0, 92, 0, 47)
-TextLabel_4.Font = Enum.Font.GothamBold
-TextLabel_4.Text = "G to Toggle"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 14.000
-
-PSX.Name = "PSX"
-PSX.Parent = Main
-PSX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PSX.BackgroundTransparency = 1.000
-PSX.Position = UDim2.new(0.0860927254, 0, 0.146520153, 0)
-PSX.Size = UDim2.new(0, 328, 0, 233)
-
-TextButton_3.Parent = PSX
-TextButton_3.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-TextButton_3.BorderColor3 = Color3.fromRGB(15, 15, 15)
-TextButton_3.Position = UDim2.new(0.292682916, 0, 0.321888387, 0)
-TextButton_3.Size = UDim2.new(0, 160, 0, 67)
-TextButton_3.Font = Enum.Font.GothamBold
-TextButton_3.Text = "AutoFarm"
-TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.TextSize = 14.000
-TextButton_3.MouseButton1Down:connect(function()
-	Pet Simulator X GUI #1
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))()
-
-
-end)
-
-OtherTab.Name = "OtherTab"
-OtherTab.Parent = Main
-OtherTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OtherTab.BackgroundTransparency = 1.000
-OtherTab.Position = UDim2.new(0.0856038481, 0, 0.146520153, 0)
-OtherTab.Size = UDim2.new(0, 327, 0, 233)
-
 -- Scripts:
 
-local function TSQDQHU_fake_script() -- DaHood.LocalScript 
-	local script = Instance.new('LocalScript', DaHood)
+local function YFHXHC_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
 
-	script.Parent.MouseButton1Down:connect(function()
-		script.Parent.Parent.DH.Visible = true
-		script.Parent.Parent.PSX.Visible = false
-		script.Parent.Parent.OtherTab.Visible = false
+	local MainFrame = script.Parent.MainFrame
+	local Opened = false
+	
+	local PositionClosed = UDim2.new(-0.465, 0,0.819, 0)
+	local PositionOpened = UDim2.new(0.358, 0,0.211, 0)
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(KeyCode)
+		If KeyCode.KeyCode == Enum.KeyCode.G then 
+		if Opened then
+			MainFrame:TweenPosition((PositionClosed), "InOut", "Quint")	
+			Opened = false
+		else
+			MainFrame:TweenPosition((PositionOpened), "InOut", "Quart")	
+			Opened = true
+		    end
+		end
 	end)
 	
 end
-coroutine.wrap(TSQDQHU_fake_script)()
-local function BULLFTM_fake_script() -- PetSimX.LocalScript 
-	local script = Instance.new('LocalScript', PetSimX)
-
-	script.Parent.MouseButton1Down:connect(function()
-		script.Parent.Parent.DH.Visible = false
-		script.Parent.Parent.PSX.Visible = true
-		script.Parent.Parent.OtherTab.Visible = false
-	end)
-	
-	
-end
-coroutine.wrap(BULLFTM_fake_script)()
-local function HMZCFSR_fake_script() -- Other.LocalScript 
-	local script = Instance.new('LocalScript', Other)
-
-	script.Parent.MouseButton1Down:connect(function()
-		script.Parent.Parent.DH.Visible = false
-		script.Parent.Parent.PSX.Visible = false
-		script.Parent.Parent.OtherTab.Visible = true
-	end)
-end
-coroutine.wrap(HMZCFSR_fake_script)()
+coroutine.wrap(YFHXHC_fake_script)()
