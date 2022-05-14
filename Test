@@ -18,6 +18,8 @@ MainFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 MainFrame.BorderColor3 = Color3.fromRGB(31, 31, 31)
 MainFrame.Position = UDim2.new(0.358090192, 0, 0.210735574, 0)
 MainFrame.Size = UDim2.new(0, 350, 0, 273)
+MainFrame.Active = true
+MainFrame.Draggable = true
 
 Swag.Name = "Swag"
 Swag.Parent = MainFrame
@@ -84,3 +86,5 @@ DaHub.MouseButton1Down:connect(function()
 	getgenv().Intro = false
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
 end)
+
+
