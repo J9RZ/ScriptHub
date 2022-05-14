@@ -84,31 +84,3 @@ DaHub.MouseButton1Down:connect(function()
 	getgenv().Intro = false
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
 end)
-
--- Scripts:
-
-local function YFHXHC_fake_script() -- ScreenGui.LocalScript 
-	local script = Instance.new('LocalScript', ScreenGui)
-
-	local MainFrame = script.Parent.MainFrame
-	local Opened = false
-	
-	local PositionClosed = UDim2.new(-0.465, 0,0.819, 0)
-	local PositionOpened = UDim2.new(0.358, 0,0.211, 0)
-	
-	local UserInputService = game:GetService("UserInputService")
-	
-	UserInputService.InputBegan:Connect(function(KeyCode)
-		If KeyCode.KeyCode == Enum.KeyCode.G then 
-		if Opened then
-			MainFrame:TweenPosition((PositionClosed), "InOut", "Quint")	
-			Opened = false
-		else
-			MainFrame:TweenPosition((PositionOpened), "InOut", "Quart")	
-			Opened = true
-		    end
-		end
-	end)
-	
-end
-coroutine.wrap(YFHXHC_fake_script)()
